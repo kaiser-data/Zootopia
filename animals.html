@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Animal Repository</title>
+        <style>
+
+
+
+    html {
+      background-color: #ffe9e9;
+    }
+    h1 {
+      text-align: center;
+      font-size: 40pt;
+      font-weight: normal;
+    }
+    body {
+      font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0;
+      padding: 1rem;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -moz-font-feature-settings: "liga" on;
+      width: 900px;
+      margin: auto;
+    }
+
+    /* Cards */
+    .cards {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .cards__item {
+      background-color: #fff;
+      border-radius: 0.25rem;
+      box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+      overflow: hidden;
+      padding: 1rem;
+      margin: 50px;
+    }
+
+    /* Card titles */
+    .card__title {
+      color: #696969; /* replaced @gray-dark */
+      font-size: 1.25rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Card text */
+    .card__text {
+      font-size: 0.95rem;
+      line-height: 2;
+      margin-bottom: 1.25rem;
+    }
+
+    /* -----------------------------------
+       Paw-print bullet list
+       ----------------------------------- */
+    .card__text ul {
+      list-style: none;    /* Remove default bullets */
+      margin: 0;
+      padding: 0;
+    }
+    .card__text ul li {
+      position: relative;
+      padding-left: 1.5em; /* Space for the paw icon */
+      margin: 0.25em 0;    /* Some breathing room */
+    }
+    .card__text ul li::before {
+      content: '🐾';       /* Paw-print emoji */
+      position: absolute;
+      left: 0;            /* Align left */
+    }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>My Animal Repository</h1>
+        <ul class="cards">
+            <li class="cards__item">
+<div class="card__title">African Wild Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Carnivore</li>
+<li><strong>Location:</strong> Africa</li>
+<li><strong>Skin-type:</strong> Fur</li>
+<li><strong>Lifespan:</strong> 10 - 13 years</li>
+<li><strong>Top Speed:</strong> 45 mph</li>
+<li><strong>Slogan:</strong> Also known as the painted dog!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">American Bulldog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> North-America</li>
+<li><strong>Type:</strong> Mastiff</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Slogan:</strong> Can jump up to 6ft high!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">American Dog Tick</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> North-America</li>
+<li><strong>Type:</strong> Arachnid</li>
+<li><strong>Skin-type:</strong> Exoskeleton</li>
+<li><strong>Lifespan:</strong> 1-5 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">American Eskimo Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 13 - 15 years</li>
+<li><strong>Slogan:</strong> The American Eskimo has splendid all white fur and an upturned tail</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Anatolian Shepherd Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 11-13 years</li>
+<li><strong>Slogan:</strong> Guards it's master's flocks!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Appenzeller Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12 – 14 years</li>
+<li><strong>Slogan:</strong> Herding dog by nature!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Australian Bulldog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Oceania</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Australian Cattle Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Oceania</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 13-15 years</li>
+<li><strong>Slogan:</strong> High energy levels and active minds!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Australian Kelpie Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Oceania</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 10 to 13 years</li>
+<li><strong>Slogan:</strong> Friendly, intelligent and energetic!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Basenji Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Africa</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12-14 years</li>
+<li><strong>Slogan:</strong> Alert, affectionate and energetic!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Bernese Mountain Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Slogan:</strong> Very loyal, faithful and affectionate!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Blue Lacy Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> North-America</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Slogan:</strong> Originated in Texas in the mid 1800s!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Bolognese Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Slogan:</strong> From the northern Italian city of Bologna!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Boxer Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Slogan:</strong> Bright, energetic and playful!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Brown Dog Tick</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Africa</li>
+<li><strong>Type:</strong> Arachnid</li>
+<li><strong>Skin-type:</strong> Exoskeleton</li>
+<li><strong>Lifespan:</strong> 3-18 months</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Bulldog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Slogan:</strong> Friendly, loving and docile!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Canaan Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Asia</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 15 years</li>
+<li><strong>Slogan:</strong> Has a strong survival instinct!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Canadian Eskimo Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> North-America</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 10 to 15 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Carolina Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> North-America</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 19 years</li>
+<li><strong>Slogan:</strong> Wild dog breed discovered in the 1970s!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Catalan Sheepdog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Lifespan:</strong> 13 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Chinese Crested Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Asia</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 13 years</li>
+<li><strong>Slogan:</strong> A hairless breed of dog!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Czechoslovakian Wolfdog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Type:</strong> mammal</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 10-15 years</li>
+<li><strong>Top Speed:</strong> 62 mph</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Dog Tick</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Africa</li>
+<li><strong>Type:</strong> Arachnid</li>
+<li><strong>Skin-type:</strong> Exoskeleton</li>
+<li><strong>Lifespan:</strong> 2-3 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Dogo Argentino</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> South-America</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 13 years</li>
+<li><strong>Slogan:</strong> Loyal and affectionate to their family!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Dogue De Bordeaux</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 8 years</li>
+<li><strong>Slogan:</strong> Extremely loyal and devoted to it's master!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">English Bulldog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Lifespan:</strong> 8-10 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Entlebucher Mountain Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12 years</li>
+<li><strong>Slogan:</strong> Native to parts of the Swiss Alps!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Eskimo Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> North-America</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 14 years</li>
+<li><strong>Slogan:</strong> Takes pure delight in cold weather!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Estrela Mountain Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 16 years</li>
+<li><strong>Slogan:</strong> Very protective and stubborn!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Formosan Mountain Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Asia</li>
+<li><strong>Type:</strong> mammal</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 10-13 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">French Bulldog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 10 to 12 years</li>
+<li><strong>Slogan:</strong>  French bulldogs are known to be very sensitive, harboring emotions that they love to express</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Greater Swiss Mountain Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12 years</li>
+<li><strong>Slogan:</strong> Protective and gentle by nature!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Greenland Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> North-America</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12 years</li>
+<li><strong>Slogan:</strong> Strong and speedy breed of dog!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Icelandic Sheepdog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Type:</strong> mammal</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12-14 years</li>
+<li><strong>Top Speed:</strong> 21 mph</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Moscow Watchdog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Eurasia</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 9 to 11 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Northern Inuit Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Carnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12 to 15 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Old English Sheepdog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12 years</li>
+<li><strong>Slogan:</strong> Intelligent, sociable and playful!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Polish Lowland Sheepdog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 12 to 14 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Prairie Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Central-America</li>
+<li><strong>Type:</strong> Mammal</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 3-4 years on average</li>
+<li><strong>Top Speed:</strong> 35 mph</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Raccoon Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Carnivore</li>
+<li><strong>Location:</strong> Asia</li>
+<li><strong>Type:</strong> Mammal</li>
+<li><strong>Skin-type:</strong> Fur</li>
+<li><strong>Lifespan:</strong> 3 - 8 years</li>
+<li><strong>Top Speed:</strong> 25 mph</li>
+<li><strong>Slogan:</strong> The only hibernating canine!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Russian Bear Dog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Eurasia</li>
+<li><strong>Skin-type:</strong> Hair</li>
+<li><strong>Lifespan:</strong> 10 to 12 years</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Saarloos Wolfdog</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Omnivore</li>
+<li><strong>Location:</strong> Europe</li>
+<li><strong>Skin-type:</strong> Hair</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Spiny Dogfish</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Carnivore</li>
+<li><strong>Location:</strong> Ocean</li>
+<li><strong>Skin-type:</strong> Smooth</li>
+<li><strong>Lifespan:</strong> Average of 20 to 24 years, but can live up to 50 years</li>
+<li><strong>Slogan:</strong> Found in ocean waters worldwide!</li>
+</ul>
+</div>
+</li>
+<li class="cards__item">
+<div class="card__title">Viper shark (dogfish)</div>
+<div class="card__text">
+<ul>
+<li><strong>Diet</strong>: Carnivore</li>
+<li><strong>Location:</strong> Ocean</li>
+<li><strong>Type:</strong> Fish</li>
+<li><strong>Skin-type:</strong> Rough</li>
+</ul>
+</div>
+</li>
+
+        </ul>
+    </body>
+</html>
